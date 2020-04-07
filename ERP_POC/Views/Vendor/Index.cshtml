@@ -1,0 +1,98 @@
+﻿@model ERP_POC.Models.VendorVM
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="graphs">
+    <div class="xs tabls">
+        <div class="div_Create">
+            @Html.Partial("Create", Model.Vendor)
+        </div>
+         
+
+        <div class="div_List">
+            @Html.Partial("List", Model.Vendors)
+        </div>
+    </div>
+</div>
+
+<script>
+    function LoadList() {
+        alert("1");
+        var JsonData = {
+            URL: "../Vendor/List",
+            TYPE: "Get",
+            DATATYPE: 'html',
+            PartialDiv: ".div_List",
+
+        }
+
+        LoadPartialDiv(JsonData);
+    }
+</script>
+
+
+@*<div class="graphs">
+    <div class="xs tabls">
+        <div class="panel">
+            <div class="panel-heading ERP-Color">
+                <h2>Vendor</h2>
+            </div>
+            <div class="panel-body no-padding" style="display: block;">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="inputsm">Small input</label>
+                            <input class="form-control input-sm" id="inputsm" type="text">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="inputsm">Small input</label>
+                            <input class="form-control input-sm" id="inputsm" type="text">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="inputsm">Small input</label>
+                            <input class="form-control input-sm" id="inputsm" type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="inputsm">Small input</label>
+                            <input class="form-control input-sm" id="inputsm" type="text">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="inputsm">Small input</label>
+                            <input class="form-control input-sm" id="inputsm" type="text">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="inputsm">Small input</label>
+                            <input class="form-control input-sm" id="inputsm" type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <button class="btn ERP-btn-success">Save</button>&nbsp;
+                            <button class="btn ERP-btn-danger">Save</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>*@

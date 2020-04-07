@@ -1,0 +1,19 @@
+﻿.profile_details {
+     margin: 0 11.8em 0 1em !important;
+ }
+
+.ERP-Color{
+    background: #8BC34A;
+    color:#fff;
+}
+
+
+.btn.ERP-btn-success{
+    color:#fff;
+    background-color:#8BC34A !important;
+}
+
+.btn.ERP-btn-danger{
+    color:#fff;
+    background-color:#F44336 !important;
+}
