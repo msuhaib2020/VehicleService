@@ -1,0 +1,394 @@
+﻿
+<div class="panel">
+    <div class="panel-heading ERP-Color">
+        <h2>Job Card</h2>
+    </div>
+
+
+    <form id="frmJobCardCreate">
+
+
+        <div class="panel-body no-padding" style="display: block;">
+            <input type="hidden" class="form-control input-sm" name="Id" value="@Model.Id">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label for="jobnum">Number</label>
+                        <input class="form-control input-sm" name="jobnum" type="number" value="@Model.JobNumber">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label for="jobdate">Date</label>
+                        <input class="form-control input-sm" name="jobdate" type="date" value="@Model.JobDate">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label for="vehicleregnum">Vehicle Number</label>
+                        <input class="form-control input-sm" name="vehicleregnum" type="number" value="@Model.VehicleNumber">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label for="chasisnum">Chasis Number</label>
+                        <input class="form-control input-sm" name="chasisnum" type="number" value="@Model.Chasis Number">
+                    </div>
+                </div>
+            </div>
+            
+                <div class="row form-group">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-4 panel-body no-padding" style="display: block;">
+                        <div class="col-sm-6">
+                            <label for="entity">Entity</label>&nbsp;&nbsp;<input name="entity" type="radio" value="@Model.Entity">
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="modify">Modify</label>&nbsp;&nbsp;<input name="modify" type="radio" value="@Model.Modify">
+                        </div>
+                    </div>
+                    <div class="col-sm-4"></div>
+                </div>
+                <div class="row">
+
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="make">Make</label>
+                            <input class="form-control input-sm" name="make" type="text" value="@Model.Make">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="modelnum">Model</label>
+                            <input class="form-control input-sm" name="modelnum" type="number" value="@Model.Model">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="odometer">Odometer</label>
+                            <input class="form-control input-sm" name="odometer" type="number" value="@Model.Odometer">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="mechanical">Mechanical</label>
+                            <input class="form-control input-sm" name="mechanical" type="text" value="@Model.Mechanical">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="additional">Additional</label>
+                            <input class="form-control input-sm" name="additional" type="text" value="@Model.Additional">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="invoicenum">Invoice No.</label>
+                            <input class="form-control input-sm" name="invoicenum" type="number" value="@Model.InvoiceNumber">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="invoicedate">Invoice Date</label>
+                            <input class="form-control input-sm" name="invoicedate" type="date" value="@Model.InvoiceDate">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="comments">Comments</label>
+                            <textarea class="form-control input-sm" name="comments" id="comments" value="@Model.Comments"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="electrical">Electrical</label>
+                            <input class="form-control input-sm" id="electrical" type="text" value="@Model.Electrical">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="service">Service</label>
+                            <textarea class="form-control input-sm" id="service" name="service" value="@Model.Service"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="bodyrepair">Body Repair</label>
+                            <textarea class="form-control input-sm" id="bodyrepair" name="bodyrepair" value="@Model.BodyRepair"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="panel-body no-padding" style="display: block;">
+                <h2>Heading 2</h2>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="customerid">Customer Id</label>
+                            <input class="form-control input-sm" id="customerid" name="customerid" type="text" value="@Model.CustomerId">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="customeraddress">Customer Address</label>
+                            <input class="form-control input-sm" id="customeraddress" name="customeraddress" type="text" value="@Model.CustomerAddress">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="contanctperson">Contact person</label>
+                            <input class="form-control input-sm" id="contanctperson" name="contactperson" type="text" value="@Model.ContactPerson" >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="lponum">Lpono</label>
+                            <input class="form-control input-sm" id="lponum" name="lponum" type="number" value="@Model.LPONumber">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="Lpodate">LPO Date</label>
+                            <input class="form-control input-sm" id="Lpodate"  name="lpodate" type="date" value="@Model.LPODate">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="phonenum">Phone</label>
+                            <input class="form-control input-sm" id="phonenum" name="phonenum" type="number" value="@Model.Phone">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="fax">Fax</label>
+                            <input class="form-control input-sm" id="fax" name="fax" type="number" value="@Model.Fax">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="sman">SMan</label>
+                            <select id="sman" class="form-control" name="sman" value="@Model.Sman">
+                                <option>demo1</option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="serviceadvisor">Service Advisor</label>
+                            <select id="serviceadvisor" class="form-control" name="serviceadvisor" value="@Model.Service Advisor">
+                                <option>demo 1</option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="phonenum">Phone</label>
+                            <input class="form-control input-sm" id="phonenum" type="number" value="@Model.Phone">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="regdate">Reg Date</label>
+                            <input class="form-control input-sm" id="regdate" name="regdate" type="date" value="@Model.RegisterDate">
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="startdate">Start Date</label>
+
+                            <input class="form-control input-sm" id="startdate" name="startdate" type="date" value="@Model.StartDate">
+
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="enddate">End Date</label>
+
+                            <input class="form-control input-sm" id="enddate" name="enddate" type="date" value="@Model.EndDate">
+
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="paycode">Paycode</label>
+                            <input class="form-control input-sm" id="paycode" name="paycode" type="number" value="@Model.Paycode">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="flatrate">Flat Rate</label>
+                            <input class="form-control input-sm" id="flatrate" name="flatrate" type="number" value="@Model.FlatRate">
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="estimatenum">Estimate No.</label>
+
+                            <input class="form-control input-sm" id="estimatenum" name="estimatenum" type="number" value="@Model.EstimateNumber">
+
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="amount">Amount</label>
+
+                            <input class="form-control input-sm" id="amount" name="amount" type="number" value="@Model.Amount">
+
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="technician">Technician</label>
+                            <select class="form-control input-sm" id="technician" name="technician" value="@Model.Technician">
+                                <option>Demo1</option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="nextservice">Next service Approx.Date</label>
+                            <input class="form-control input-sm" id="nextservice" name="nextservice" type="date" value="@Model.NextSerivce">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="vehtestedby">Vehicle Teste by</label>
+                            <select class="form-control input-sm" id="vehtestedby" name="vehtestedby" value="@Model.VehicleTestby">
+                                <option>Demo1</option>
+                            </select>
+
+
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="km">Km</label>
+
+                            <input class="form-control input-sm" id="km" name="km" type="number" value="@Model.Km">
+
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="status">Status</label>
+                            <select class="form-control input-sm" id="status" name="status" value="@Model.Status">
+                                <option>Demo1</option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="nextservice">Next service Approx.Date</label>
+                            <input class="form-control input-sm" id="nextservice" name="nextservice" type="date" value="@Model.NextServiceAppDate">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="panel-body no-padding" style="display: block;">
+                <h2>Heading 3</h2>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="starttime">Start Time</label>
+                            <input class="form-control input-sm" id="starttime" name="starttime" type="time" value="@Model.StartTime">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="endtime">End Time</label>
+                            <input class="form-control input-sm" id="endtime" name="endtime" type="time" value="@Model.EndTime">
+
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="markup">Mark up</label>
+                            <input class="form-control input-sm" id="markup" name="markup" type="time" disabled value="@Model.Markup">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="advancepaid">Advance paid</label>
+                            <input class="form-control input-sm" id="advancepaid" name="advancepaid" type="number" value="@Model.Advancepaid">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="agentname">Agent Name</label>
+                            <select class="form-control input-sm" id="agentname" name="agentname" value="@Model.AgentName">
+                                <option>demo</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="receiptno">Receipt No</label>
+                            <input class="form-control input-sm" id="receiptno" name="receiptno" type="number" value="@Model.ReceiptNumber">
+
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="cliamnumber">Claim Number</label>
+                            <input class="form-control input-sm" id="cliamnumber" name="cliamnumber" type="number" value="@Model.ClaimNumber">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <button class="btn ERP-btn-success" onclick="javascript: return SaveVendor();">Update</button>&nbsp;
+                            <button class="btn ERP-btn-success" onclick="javascript: return SaveVendor();">Find</button>&nbsp;
+                            <button class="btn ERP-btn-success" onclick="javascript: return SaveVendor();">Add</button>&nbsp;
+                            <button class="btn ERP-btn-danger">Print</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6"></div>
+                </div>
+            </div>
+</form>
+</div>
+
